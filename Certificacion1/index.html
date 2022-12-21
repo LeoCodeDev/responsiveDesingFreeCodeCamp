@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in deserunt quos esse harum voluptatem, eveniet consequatur ad ex modi.</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Name" required>
+        </label>
+        <!--ToDo Pendiente Intruccion 6 -->
+        <label for="name" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="example@email.com" required>
+        </label>
+        <!-- ToDo error de validacion HTML pendiente Instruccion 9 -->
+        <label for="number" id="number-label">
+            Number
+            <input type="number" id="number" min="6" max="11" placeholder="555 55 55">
+        </label>
+        <select name="" id="dropdown">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+        <label for="option-a">
+            Option A
+            <input type="radio" name="name" id="option-a" value="a">
+        </label>
+        <label for="option-b">
+            Option B
+            <input type="radio" name="name" id="option-b" value="b">
+        </label>
+        <label for="rojo">
+            rojo
+            <input type="checkbox" name="rojo" id="rojo" value="rojo">
+        </label>
+        <label for="azul">
+            azul
+            <input type="checkbox" name="azul" id="azul" value="azul">
+        </label>
+        <label for="verde">
+            verde
+            <input type="checkbox" name="verde" id="verde" value="verde">
+        </label>
+        <label for="comments">
+            Comentarios
+            <textarea name="commentss" id="comments" cols="30" rows="10">
+
+            </textarea>
+            <input type="submit" value="Submit" id="submit">
+        </label>
+    </form>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <title>Technical Documentation - Basic Javascript</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            Basic Javascript
+        </header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#What_is_Javascript" class="nav-link">What is Javascript</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+            <li><a href="#Comments_and_Operators" class="nav-link">Comments and Operators</a></li>
+            <li><a href="#Conditionals" class="nav-link">Conditionals</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <h1>Basic Javascript</h1>
+        <section class="main-section" id="Introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>
+                Javascript is the programing language that you should use in order to add interactive characteristics to
+                your website.
+                Like interactive styles what will change when you push a button or click on an input.
+            </p>
+            <p>
+                Let's keep reading to know more about Javascript.
+            </p>
+        </section>
+        <section class="main-section" id="What_is_Javascript">
+            <header>
+                <h2>What is Javascript</h2>
+            </header>
+            <p>
+                But, what is really Javascript?
+            </p>
+            <p>
+                is a powerful programming language that can add interactivity to a website. It was invented by Brendan
+                Eich.
+            </p>
+            <p>
+                JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games,
+                animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+            </p>
+            <p>
+                JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools
+                on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Browser Application Programming Interfaces (APIs) built into web browsers, providing
+                        functionality such as dynamically creating HTML and setting CSS styles
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Third-party APIs that allow developers to incorporate functionality in sites from other content
+                        providers, such as Twitter or Facebook.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Third-party frameworks and libraries that you can apply to HTML to accelerate the work of
+                        building sites and applications.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        And more
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <p>
+                Variables are containers that store values. You start by declaring a variable with the <span>let</span>
+                keyword, followed by the name you give to the variable:
+            </p>
+            <code>
+                let myVariable;
+            </code>
+            <p>
+                You can name a variable nearly anything, but there are some restrictions.
+            </p>
+            <p>
+                JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems
+                in your code, check the case!
+            </p>
+            <p>
+                After declaring a variable, you can give it a value:
+            </p>
+            <code>
+                myVariable = "Bob";
+            </code>
+            <p>
+                Also, you can do both these operations on the same line:
+            </p>
+            <code>
+                let myVariable = "Bob";
+            </code>
+            <p>
+                After assigning a value to a variable, you can change it later in the code:
+            </p>
+            <code>
+                let myVariable = "Bob";<br>
+                myVariable = "Steve";
+            </code>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>
+                <h2>Data Types</h2>
+            </header>
+            <p>
+                Note that variables may hold values that have different data types:
+            </p>
+            <div>
+                <h4>String</h4>
+                <p>
+                    This is a sequence of text known as a string. To signify that the value is a string, enclose it in
+                    single quote marks.
+                </p>
+                <code>let myVariable = 'Bob';</code>
+            </div>
+            <div>
+                <h4>Number</h4>
+                <p>
+                    This is a number. Numbers don't have quotes around them.
+                </p>
+                <code>
+                    let myVariable = 10;
+                </code>
+            </div>
+            <div>
+                <h4>Boolean</h4>
+                <p>
+                    This is a True/False value. The words true and false are special keywords that don't need quote
+                    marks.
+                </p>
+                <code>let myVariable = true;</code>
+            </div>
+            <div>
+                <h4>Array</h4>
+                <p>
+                    This is a structure that allows you to store multiple values in a single reference.
+                </p>
+                <code>let myVariable = [1,'Bob','Steve',10];</code>
+                <p>Refer to each member of the array like this:</p>
+                <code>myVariable[0], myVariable[1],</code>
+            </div>
+            <div>
+                <h4>Object</h4>
+                <p>
+                    This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep
+                    this in mind as you learn.
+                </p>
+                <code>let myVariable = {name: 'Joe', last_name: 'Mama'}</code>
+            </div>
+            <p>
+                So why do we need variables? Variables are necessary to do anything interesting in programming. If
+                values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or
+                change an image displayed in an image gallery.
+            </p>
+        </section>
+        <section class="main-section" id="Comments_and_Operators">
+            <header>
+                <h2>Comments and Operators</h2>
+            </header>
+            <div>
+                <h4>Comments</h4>
+                <p>
+                    Comments are snippets of text that can be added along with code. The browser ignores text marked as
+                    comments. You can write comments in JavaScript just as you can in CSS:
+                </p>
+                <code>
+                    /* Everything in between is a comment. */
+                </code>
+                <p>
+                    If your comment contains no line breaks, it's an option to put it behind two slashes like this:
+                </p>
+                <code>
+                    // This is a comment
+                </code>
+            </div>
+            <div>
+                <h4>Operators</h4>
+                <p>
+                    An operator is a mathematical symbol that produces a result based on two values (or variables). You
+                    can see some of the simplest operators:
+                </p>
+                <table class="tftable" border="1">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Explanation</th>
+                        <th>Symbol(s)</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Addition</td>
+                        <td>Add two numbers together or combine two strings.</td>
+                        <td><code>+</code></td>
+                        <td><code>6 + 9;</code>,<br> <code>'hello' + 'world!'</code></td>
+                    </tr>
+                    <tr>
+                        <td>Subtraction, Multiplication, Division</td>
+                        <td>These do what you'd expect them to do in basic math.</td>
+                        <td><code>-</code>, <code>*</code>, <code>/</code></td>
+                        <td>
+                            <code>9 - 3;</code><br>
+                            <code>8 * 2; // multiply in JS is an asterisk</code><br>
+                            <code>9 / 3</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Assignment</td>
+                        <td>As you've seen already: this assigns a value to a variable.</td>
+                        <td><code>=</code></td>
+                        <td><code>let myVariable = 'Bob';</code></td>
+                    </tr>
+                    <tr>
+                        <td>Strict equality</td>
+                        <td>This performs a test to see if two values are equal. It returns a
+                            <code>true</code>/<code>false</code> (Boolean) result.
+                        </td>
+                        <td><code>===</code></td>
+                        <td><code>let myVariable = 3;
+                            myVariable === 4; // false</code></td>
+                    </tr>
+                    <tr>
+                        <td>Not, Does-not-equal</td>
+                        <td>This returns the logically opposite value of what it precedes. It turns a true into a false,
+                            etc.. When it is used alongside the Equality operator, the negation operator tests whether
+                            two values are not equal.</td>
+                        <td><code>!</code>, <code>!=</code>, <code>!==</code></td>
+                        <td>
+                            For "Not", the basic expression is true, but the comparison returns false because we negate
+                            it:<br>
+                            <code>
+                                let myVariable = 3; <br>
+                                !(myVariable === 3) // false;
+                            </code><br>
+                            "Does-not-equal" gives basically the same result with different syntax. Here we are testing
+                            "is <code>myVariable</code> NOT equal to 3". This returns <code>false</code> because
+                            <code>myVariable</code> IS equal to 3:<br>
+                            <code>
+                                let myVariable = 3; <br>
+                                myVariable !== 3;
+                            </code>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    There are a lot more operators to explore, but this is enough for now.
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="Conditionals">
+            <header>
+                <h2>Conditionals</h2>
+            </header>
+            <p>
+                Conditionals are code structures used to test if an expression returns true or not. A very common
+                form of conditionals is the if...else statement. For example:
+            </p>
+            <code class="block-code">
+                    let iceCream = "chocolate";<br>
+                    if (iceCream === "chocolate") {<br>
+                        alert("Yay, I love chocolate ice cream!");<br>
+                        } else {<br>
+                          alert("Awwww, but chocolate is my favorite…");<br>
+                    }
+                </code>
+            <p>
+                The expression inside the if () is the test. This uses the strict equality operator (as described above)
+                to compare the variable iceCream with the string chocolate to see if the two are equal. If this
+                comparison returns true, the first block of code runs. If the comparison is not true, the second block
+                of code—after the else statement—runs instead.
+            </p>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>
+                <h2>Functions</h2>
+            </header>
+            <p>
+                Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of
+                code as a function that executes when you call the function name in your code. This is a good
+                alternative to repeatedly writing the same code. You have already seen some uses of functions. For
+                example:
+            </p>
+            <code class="block-code">
+                    function greeting(){<br>
+                        alert('Heloooooo!')<br>
+                    }<br>
+                    greeting();<br>
+                </code>
+            <p>
+                If you see something which looks like a variable name, but it's followed by parentheses— <code>()</code>
+                —it is likely a function. Functions often take arguments: bits of data they need to do their job.
+                Arguments go inside the parentheses, separated by commas if there is more than one argument.
+            </p>
+            <p>
+                For example, the <code>alert()</code> function makes a pop-up box appear inside the browser window, but
+                we need to give it a string as an argument to tell the function what message to display.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

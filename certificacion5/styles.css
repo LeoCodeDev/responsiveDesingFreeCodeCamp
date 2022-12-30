@@ -120,7 +120,7 @@ span {
     
 }
 
-.project-title {
+.project-tile {
     color: aliceblue;
     font-size: 3.5rem;
     margin: auto;
@@ -175,7 +175,8 @@ span {
 
 #contact div p:last-of-type {
     font-size: 2rem;
-    color: var(--navbar-background);
+    color: #b85f36;
+    font-weight: 100;
 }
 
 #contact div div {
@@ -186,7 +187,7 @@ span {
 }
 
 #contact div > a {
-    color: var(--welcome-background);
+    color: aliceblue;
     text-decoration: none;
 }
 

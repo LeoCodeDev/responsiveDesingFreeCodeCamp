@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Acuming-Variable-Concept;
+    src: url(Acumin-Variable-Concept.ttf);
+}
+
+:root {
+    --nav-bar-color: #242840;
+    --text: honeydew;
+    --background: #242840ec;
+    --icons: #e78B47;
+    --highlight: #00a8e4;
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Acuming-Variable-Concept;
+    background-color: var(--background);
+    color: var(--text);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    background-color: var(--nav-bar-color);
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-width: 100%;
+}
+
+#header-img {
+    width: 10%;
+    padding: 10px 40px;
+}
+
+#nav-bar {
+    padding: 0 40px;
+}
+
+#nav-bar ul{
+    display: flex;
+}
+
+#nav-bar ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--highlight);
+}
+
+i {
+    color: var(--icons);
+}
+
+#main-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--highlight);
+    margin-bottom: 2.5rem;
+}
+
+#home {
+    font-size: 2.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    gap: 1rem;
+    margin: 8rem auto 8rem auto;
+}
+
+p {
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+    color: var(--icons);
+}
+
+iframe {
+    margin-top: 5rem;
+    width: 50rem;
+    height: 25rem;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: left;
+}
+
+.content i {
+    display: flex;
+    font-size: 4rem;
+    width: 20%;
+    justify-content: center;
+}
+
+#conditions {
+    display: flex;
+    margin: 3rem;
+    padding: 3rem;
+    gap: 5rem;
+    justify-content: center;
+    
+}
+
+.products {
+    border: 2px solid var(--icons);
+    padding: 5rem 0;
+    width: 30rem;
+}
+
+.products p {
+    color: var(--highlight);
+}
+
+.products ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+
+}
